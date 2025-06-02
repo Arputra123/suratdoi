@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pesan Buat Kamu 💖</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Courier New', monospace;
+      color: #d81b60;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .frame {
+      width: 320px;
+      margin: 0 auto 30px;
+      padding: 10px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 1.5s;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .typing {
+      border-right: 0.15em solid #d81b60;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 20px;
+      margin: 30px auto;
+      width: 0;
+      animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
+    }
+
+    .akhir {
+      margin-top: 40px;
+      font-size: 16px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 6.5s;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #d81b60; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pesan buat kamu 💌</h2>
+
+  <!-- FRAME VIDEO -->
+  <div class="frame">
+    <video src="video.mp4" autoplay muted loop playsinline></video>
+  </div>
+
+  <!-- TEXT MESIN KETIK -->
+  <div class="typing">
+    Hai kamu yang lagi capek kerja... 😔💼
+  </div>
+
+  <!-- AKHIR -->
+  <div class="akhir">
+    <p>Aku tau hari-harimu gak selalu mudah, tapi kamu luar biasa hebat.</p>
+    <p>Semangat terus ya sayang, jangan lupa istirahat dan senyum dikit~ 😊</p>
+    <p><strong>Aku selalu ada buat nemenin kamu 💖</strong></p>
+    <p><strong>Created By. Ayangmu (Allfian Rahma Putra)</strong></p>
+  </div>
+
+</body>
+</html>
